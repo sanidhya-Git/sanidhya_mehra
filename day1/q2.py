@@ -1,0 +1,15 @@
+a = str(input("Enter first string: "))
+b = str(input("Enter second string: "))
+c = a + b
+
+print("\n----- String Operations -----")
+print("Concatenated String:", c)
+print("Uppercase:", c.upper())
+print("Lowercase:", c.lower())
+print("Title Case:", c.title())
+print("Capitalized:", c.capitalize())
+print("Length of String:", len(c))
+print("Is Alphanumeric:", c.isalnum())
+print("Is Alphabetic:", c.isalpha())
+print("Reversed String:", c[::-1])
+print("Count of 'a':", c.count('a'))
