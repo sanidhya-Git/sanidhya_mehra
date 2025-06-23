@@ -1,0 +1,9 @@
+import csv
+data = [['Name', 'Address', 'Mobile', 'Email'], ['sanidhya', 'SKIT jaipur', '1234567890', 'sanidhya@gmail.com'],['shivam', 'modeltown', '9876543210', 'shivam@gmail.com'],['dev', 'aburoad', '9123456789', 'abu@gmail.com'],['lucky', ' Delhi', '9876501234', 'lucky@gmail.com']]
+
+with open('addressbook.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+
+
