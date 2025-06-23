@@ -32,9 +32,9 @@ CREATE TABLE IF NOT EXISTS Orders (
 
 
 users = [
-    ("Alice", "alice@example.com"),
-    ("Bob", "bob@example.com"),
-    ("Charlie", "charlie@example.com")
+    ("sanidhya", "sanidhya@example.com"),
+    ("shivam", "shivam@example.com"),
+    ("lucky", "lucky@example.com")
 ]
 
 products = [
