@@ -1,7 +1,5 @@
 import sqlite3
-
-
-conn = sqlite3.connect("user_data.db")
+conn = sqlite3.connect("new.db")
 cursor = conn.cursor()
 
 
