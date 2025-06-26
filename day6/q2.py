@@ -3,7 +3,8 @@ import pandas as pd
 df1 = pd.DataFrame({
     'id': [1, 2, 3, 4],
     'name': ['sanidhya', 'shivam', 'yash', 'Dev'],
-    'score': [2 , 12 , 45 , 75]})
+    'score': [2 , 12 , 45 , 75]
+    })
 
 df2 = pd.DataFrame({
     'id': [3, 4, 5, 6],
