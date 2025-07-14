@@ -12,7 +12,7 @@ SELECT
 FROM sales
 GROUP BY customer_id;
 
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 SELECT s.customer_id, m.product_name
 FROM sales s
 JOIN menu m ON s.product_id = m.product_id
@@ -22,7 +22,7 @@ WHERE (s.customer_id, s.order_date) IN (
   GROUP BY customer_id
 );
 
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 SELECT
   m.product_name,
   COUNT(*) AS total_orders
@@ -31,7 +31,7 @@ JOIN menu m ON s.product_id = m.product_id
 GROUP BY m.product_name
 ORDER BY total_orders DESC;
 
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 SELECT s.customer_id, m.product_name, COUNT(*) AS order_count
 FROM sales s
 JOIN menu m ON s.product_id = m.product_id
@@ -46,7 +46,7 @@ HAVING COUNT(*) = (
   ) sub
 );
 
-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 SELECT s.customer_id, m.product_name
 FROM sales s
 JOIN members mem ON s.customer_id = mem.customer_id
